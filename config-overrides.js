@@ -7,7 +7,7 @@ const {
   addBundleVisualizer,
   // addWebpackAlias,
   adjustWorkbox,
-} = require("customize-cra");
+} = require('customize-cra');
 // const path = require("path");
 
 module.exports = override(
@@ -15,7 +15,7 @@ module.exports = override(
   addDecoratorsLegacy(),
 
   // disable eslint in webpack
-  disableEsLint(),
+  // disableEsLint(),
 
   // add webpack bundle visualizer if BUNDLE_VISUALIZE flag is enabled
   process.env.BUNDLE_VISUALIZE === 1 && addBundleVisualizer(),
@@ -29,7 +29,7 @@ module.exports = override(
   adjustWorkbox((wb) =>
     Object.assign(wb, {
       skipWaiting: true,
-      exclude: (wb.exclude || []).concat("index.html"),
+      exclude: (wb.exclude || []).concat('index.html'),
     })
   )
 );

@@ -4,19 +4,20 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
-  overrides: [
-  ],
+  extends: ['react/recommended', 'airbnb', 'prettier', 'prettier/react'],
+  // settings: {
+  //   'import/resolver': {
+  //     node: {
+  //       path: ['src'],
+  //       extensions: ['.js', '.jsx'],
+  //     },
+  //   },
+  // },
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
-  rules: {
-  },
+  plugins: ['prettier'],
+  rules: { 'prettier/prettier': ['error', { endOfLine: 'auto' }], 'react-hooks/exhaustive-deps': 'error' },
 };
