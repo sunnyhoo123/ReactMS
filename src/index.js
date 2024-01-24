@@ -3,16 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+// import './styles/index.scss';
+import Button from './components/Button';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   // <React.StrictMode>
 
-  <ChakraProvider>
-    <App />
-  </ChakraProvider>
+  // <ChakraProvider>
+  // <App />
+
+  <Button />
+  // </ChakraProvider>
   // </React.StrictMode>
 );
 

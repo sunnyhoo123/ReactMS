@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+/* 下拉菜单按钮 */
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 鼠标移动到下拉菜单按钮到样式*/
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* 搜索框 */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: blue;
+}
+
+/* 搜索框获取焦点的样式 */
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+/* 容器 <div> - 定位下拉菜单 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* 下拉菜单内容 (默认隐藏) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* 下拉菜单链接样式 */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* 鼠标移动到链接上的样式 */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* 显示下拉菜单 (使用 JS 添加 .dropdown-content 类) */
+.show {
+  display: block;
+}

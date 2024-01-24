@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['react/recommended', 'airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier', 'plugin:storybook/recommended'],
   // settings: {
   //   'import/resolver': {
   //     node: {
@@ -18,6 +18,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  ignorePatterns: ['*/App.js', 'src/index.js'],
   plugins: ['prettier'],
-  rules: { 'prettier/prettier': ['error', { endOfLine: 'auto' }], 'react-hooks/exhaustive-deps': 'error' },
+  rules: { eqeqeq: 'off', curly: 'error', quotes: ['error', 'double'] },
 };
