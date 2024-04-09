@@ -1,3 +1,10 @@
+自定义公共组件
+https://www.npmjs.com/package/ms-react-ui
+
+包内容查看
+https://unpkg.com/#/
+https://unpkg.com/ms-react-ui@0.1.17/dist/bundle.js
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
